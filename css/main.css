@@ -184,7 +184,7 @@ div#bs-example-navbar-collapse-1 {
 }
 .navbar-brand{
     font-family: 'Playball', cursive;
-    font-size: 34px !important;
+    font-size: 34px;
     text-decoration: none;
     color: white !important;
 }
@@ -237,6 +237,15 @@ INTRO CONTAINER
     font-size: 30px; 
     font-style: italic; 
     text-transform: capitalize;
+}
+
+.title_top_info {
+    color: white;
+ }
+.title_secondary_info {
+    color: white;
+    font-weight: lighter; 
+    font-size: 20px; 
 }
 
 .white{
@@ -571,6 +580,25 @@ h1 {
 .navbar-default {
     border: 0 !important;
 }
+.map-container {
+    width: 100%;
+}
+.map-container iframe{
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+    pointer-events: auto;
+}
+.image_box_left {
+    padding-left: 0;
+}
+.text_copyright {
+    margin-top: 16px;
+    font-size: 12px;
+}
 
 /*========================
 MEDIA QUERIES MOBILE
@@ -594,6 +622,11 @@ MEDIA QUERIES MOBILE
         margin: 0px auto;
         /* display: block; */
     }
+
+    .navbar-brand {
+        font-size: 26px;
+    }
+
 }
 /*========================
 MEDIA QUERIES TABLET
@@ -607,6 +640,8 @@ MEDIA QUERIES TABLET
     .background_content h1 {
       top: 33%;
     }  
+
+    
 }
 
 /*========================
@@ -773,6 +808,11 @@ MEDIA QUERIES TABLET
 
     } 
 
+    .image_box_left {
+        margin: 0 40px 20px 0;
+    }
+
+
 } /*END OF MEDIA QUERY*/
 
 /*========================
@@ -872,17 +912,41 @@ MEDIA QUERIE DESKTOP
         font-size: 30px;
     }
 
-    .map-container {
-    width: 100%;
-    margin: 50px 0 3000px;
+    
 }
-.map-container iframe{
-    width: 100%;
-    display: block;
-    pointer-events: none;
-    position: relative; /* IE needs a position other than static */
-}
-.map-container iframe.clicked{
-    pointer-events: auto;
-}
+
+@media (max-width: 1100px) {
+    /*OTHER*/
+
+    .image_box_left {
+        margin: 0 0 20px 0;
+    }
+
+    .img-section-space {
+        margin: 0;
+    }
+
+    .img-section img {
+        margin-top: 10px;
+    }
+
+    #filter-list {
+        padding: 0;
+    }
+
+    #pricing.description_content {
+        padding-bottom: 0;
+    }
+
+    #pricing .text-content.container {
+        margin-top: 0;
+    }
+
+    .title_secondary_info {
+        margin: 0;
+    }
+
+    #contact .text-content.container {
+        margin-bottom: 0;
+    }
 }
