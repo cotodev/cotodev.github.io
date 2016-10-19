@@ -43,23 +43,23 @@
 		});
 
 		$('.map-container')
-	.click(function(){
-			$(this).find('iframe').addClass('clicked')})
-	.mouseleave(function(){
-			$(this).find('iframe').removeClass('clicked')});
+			.click(function(){
+					$(this).find('iframe').addClass('clicked')})
+			.mouseleave(function(){
+					$(this).find('iframe').removeClass('clicked')});
 	
-       
-        $(function(){
-            $('#menu').mixItUp({
-                transitionSpeed: 350,
-                load: {
-                filter: '.takeout'
-              }
-            });
+    $(function(){
+        $('#menu').mixItUp({
+            animation: {
+            	duration: 350,
+            },
+            load: {
+            	filter: '.takeout'
+          	},
+
         });
+    });
 
-
-    
     };
 
 
