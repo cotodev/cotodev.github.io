@@ -216,7 +216,7 @@ INTRO CONTAINER
 .follow_container {
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 45%;
     text-align: center;
 }
 .starter_follow {
@@ -286,13 +286,8 @@ INTRO CONTAINER
 .reserve.background_content{
     background: url('../images/reserve.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: 70% 50%;
-}
-
-.bread.background_content{
-    background: url('../images/bread.jpg') no-repeat center center; 
-    background-size: cover;
-    background-position: 70% 50%;
+    background-position: center;
+    background-attachment: fixed;
 }
  .contact.background_content{
     background: url('../images/contact.jpg') no-repeat center center; 
@@ -302,18 +297,6 @@ INTRO CONTAINER
 }
  .pricing.background_content{
     background: url('../images/pricing.jpg') no-repeat center center; 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.reservation.background_content{
-    background: url('../images/reservation-seat.jpg') no-repeat center center; 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.bread.background_content{
-    background: url('../images/breakfast.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -638,14 +621,10 @@ MEDIA QUERIES TABLET
 
 
     @media (min-width: 400px) { 
-    .starter_container {
-        height: 100%;
-    }
+
     .background_content h1 {
       top: 33%;
     }  
-
-    
 }
 
 /*========================
@@ -657,6 +636,10 @@ MEDIA QUERIES TABLET
         .starter_container {
             height: 100%;
         }
+
+/*.follow_container {
+        top: 35%;
+    } */
 
     /*========================
     NAV
@@ -823,11 +806,14 @@ MEDIA QUERIES TABLET
 MEDIA QUERIE DESKTOP
 =========================*/
 
-@media (min-width: 1100px) { 
-
+@media (min-width: 1100px) {
     .starter_container {
         background-attachment: fixed;
     }
+
+/*    .follow_container {
+        top: 45%;
+    }*/
 
 
     /*========================
@@ -953,4 +939,19 @@ MEDIA QUERIE DESKTOP
     #contact .text-content.container {
         margin-bottom: 0;
     }
+}
+
+@media (max-width: 660px) {
+    .follow_container {
+        top: 25%;
+    } 
+    .starter_container {
+        height: 120%;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 1100px) {
+    .follow_container {
+        top: 35%;
+    } 
 }

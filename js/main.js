@@ -2,6 +2,10 @@
 
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
+
+		$('.nav a').on('click', function(){
+			 $('.navbar-toggle').click();
+		});
  
 		$('a[href^="#"]').on('click', function (e) {
 			e.preventDefault();
@@ -25,20 +29,7 @@
  
 	function onScroll(event){
 		var scrollPosition = $(document).scrollTop();
-		// $('#contact').each(function () {
-	 //        $('#map').addClass('scrolloff');                // set the mouse events to none when doc is ready
-	        
-	 //        $('#overlay').on("mouseup",function(){          // lock it when mouse up
-	 //            $('#map').addClass('scrolloff'); 
-	 //            //somehow the mouseup event doesn't get call...
-	 //        });
-	 //        $('#overlay').on("mousedown",function(){        // when mouse down, set the mouse events free
-	 //            $('#map').removeClass('scrolloff');
-	 //        });
-	 //        $("#map").mouseleave(function () {              // becuase the mouse up doesn't work... 
-	 //            $('#map').addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
-	 //                                                        // or you can do it on some other event
-	 //    });
+
 		$('.nav li a').each(function () {
 			var currentLink = $(this);
 			var refElement = $(currentLink.attr("href"));
