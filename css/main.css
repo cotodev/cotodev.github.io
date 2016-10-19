@@ -20,7 +20,7 @@ h1 {
     border: 1px solid rgba(47, 46, 47, 0.59);
 }
 .navactive{
-   border-bottom: 1px solid #96E16B;
+   border-bottom: 1px solid #C59D5F;
 }
 p.desc-text{
     font-size: 20px;
@@ -171,7 +171,7 @@ h1, h2, p, span, a {
     transition: color 0.3s ease-in-out;
 }
 .color_animation:hover{
-    color: #9BE86F !important;
+    color: #C59D5F !important;
 }
 /*========================
     NAV
@@ -208,7 +208,7 @@ INTRO CONTAINER
     padding: 0;
     min-width: 100%;
     height: 100%;
-    background: url('../images/steak.jpg') no-repeat center center;
+    background: url('../images/dining.JPG') no-repeat center center;
     background-size: cover;
     text-align: center;
     background-position: center;  
@@ -283,8 +283,8 @@ INTRO CONTAINER
     border-bottom: 8px solid #fff;
 }
 
-.beer.background_content{
-    background: url('../images/beer.jpg') no-repeat center center; 
+.reserve.background_content{
+    background: url('../images/reserve.jpg') no-repeat center center; 
     background-size: cover;
     background-position: 70% 50%;
 }
@@ -294,8 +294,8 @@ INTRO CONTAINER
     background-size: cover;
     background-position: 70% 50%;
 }
- .featured.background_content{
-    background: url('../images/featured.jpg') no-repeat center center; 
+ .contact.background_content{
+    background: url('../images/contact.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -362,11 +362,15 @@ FIRST FOOTER CONTENT
 .social_info,
 .social_hours {
     display: block;
-    font-size: 28px;
-    font-weight: 900;
     letter-spacing: 0.040em;
-    color: #63C85D;
+    color: #C59D5F;
     text-align: center;
+}
+
+.social_heading {
+    font-family: 'Playball', cursive;
+    font-weight: 900;
+    font-size: 50px !important;
 }
 
 .social_hours { 
