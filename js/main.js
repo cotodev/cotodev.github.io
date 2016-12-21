@@ -49,7 +49,7 @@
 					$(this).find('iframe').removeClass('clicked')});
 	
     $(function(){
-        $('#menu').mixItUp({
+        $('#menu-types').mixItUp({
             animation: {
             	duration: 350,
             },

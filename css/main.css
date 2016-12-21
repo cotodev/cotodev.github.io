@@ -27,9 +27,19 @@ p.desc-text{
     line-height: 35px;
     text-align: justify;
 }
+
+p.desc-text.center{
+    text-align: center;
+}
 .text-content.container {
     margin-top: 65px;
     margin-bottom: -51px;
+}
+.text-content.container.special {
+    border: 1px solid #2f2e2f;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px 0 0;
 }
 .right-text p{
     text-align: left !important;
